@@ -1,0 +1,11 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show_sql: false
+    database: H2
+  datasource:
+    url: jdbc:h2:mem:testdb
+server:
+  port: 8081
