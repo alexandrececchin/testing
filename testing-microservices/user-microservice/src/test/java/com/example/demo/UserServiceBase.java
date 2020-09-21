@@ -5,6 +5,7 @@ import com.example.demo.user.User;
 import com.example.demo.user.UserController;
 import com.example.demo.user.UserService;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
+import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -22,8 +23,7 @@ public class UserServiceBase {
     @MockBean
     private AuthService authService;
 
-    org.junit.Testore
-
+    @Before
     public void setup() {
 
         User actual = new User("com/example/demo/user", "Jack", "Frost", "jfrost@example.com");
